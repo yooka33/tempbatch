@@ -1,48 +1,549 @@
 {
-  "source": "corpus-batch-001.jsonl",
+  "generatedAt": "2026-08-13T23:17:08.870Z",
+  "sourceFileCount": 5,
+  "producedFileCount": 50,
   "sourceEntityCount": 500,
-  "partCount": 5,
-  "entitiesPerPart": 100,
-  "parts": [
+  "producedEntityCount": 500,
+  "corpusSource": "../corpus-batch-001.jsonl",
+  "corpusSourceSha256": "9a816959f36ed76874e92b9a6d652f6d997c962baeee62ffe08b778241581bd7",
+  "reconstructedSha256": "9a816959f36ed76874e92b9a6d652f6d997c962baeee62ffe08b778241581bd7",
+  "reconstructionMatchesCorpusSource": true,
+  "concatenationOrder": [
+    "part-001-01.jsonl",
+    "part-001-02.jsonl",
+    "part-001-03.jsonl",
+    "part-001-04.jsonl",
+    "part-001-05.jsonl",
+    "part-001-06.jsonl",
+    "part-001-07.jsonl",
+    "part-001-08.jsonl",
+    "part-001-09.jsonl",
+    "part-001-10.jsonl",
+    "part-002-01.jsonl",
+    "part-002-02.jsonl",
+    "part-002-03.jsonl",
+    "part-002-04.jsonl",
+    "part-002-05.jsonl",
+    "part-002-06.jsonl",
+    "part-002-07.jsonl",
+    "part-002-08.jsonl",
+    "part-002-09.jsonl",
+    "part-002-10.jsonl",
+    "part-003-01.jsonl",
+    "part-003-02.jsonl",
+    "part-003-03.jsonl",
+    "part-003-04.jsonl",
+    "part-003-05.jsonl",
+    "part-003-06.jsonl",
+    "part-003-07.jsonl",
+    "part-003-08.jsonl",
+    "part-003-09.jsonl",
+    "part-003-10.jsonl",
+    "part-004-01.jsonl",
+    "part-004-02.jsonl",
+    "part-004-03.jsonl",
+    "part-004-04.jsonl",
+    "part-004-05.jsonl",
+    "part-004-06.jsonl",
+    "part-004-07.jsonl",
+    "part-004-08.jsonl",
+    "part-004-09.jsonl",
+    "part-004-10.jsonl",
+    "part-005-01.jsonl",
+    "part-005-02.jsonl",
+    "part-005-03.jsonl",
+    "part-005-04.jsonl",
+    "part-005-05.jsonl",
+    "part-005-06.jsonl",
+    "part-005-07.jsonl",
+    "part-005-08.jsonl",
+    "part-005-09.jsonl",
+    "part-005-10.jsonl"
+  ],
+  "sources": [
     {
       "file": "part-001.jsonl",
-      "startIndex": 1,
-      "endIndex": 100,
+      "sha256": "fa1e91a6dae1fb9ea70400120cd2ede76a4dc1c8a5701b08e18c027c2eae8dfd",
       "entityCount": 100,
-      "sha256": "fa1e91a6dae1fb9ea70400120cd2ede76a4dc1c8a5701b08e18c027c2eae8dfd"
+      "subParts": [
+        {
+          "file": "part-001-01.jsonl",
+          "sizeBytes": 5051,
+          "entityCount": 10,
+          "firstEntityId": "venue:du-massif-des-agriers-aux-sources-de-la-creuse",
+          "lastEntityId": "venue:city-stade-color-ado-3",
+          "sha256": "13074f5e079f0e8ba816163bb93c9728a6db033b9fc3f1db3239f171a947307a"
+        },
+        {
+          "file": "part-001-02.jsonl",
+          "sizeBytes": 3936,
+          "entityCount": 10,
+          "firstEntityId": "venue:maison-azu-chambres-d-h-tes",
+          "lastEntityId": "venue:aire-de-lancer-de-poids-34",
+          "sha256": "ac2c4bb3e9c53ca85e43ac9d9300d072ca4a7e4d0e56a6fb76c680ba1263e6a8"
+        },
+        {
+          "file": "part-001-03.jsonl",
+          "sizeBytes": 3388,
+          "entityCount": 10,
+          "firstEntityId": "venue:m-mo-4",
+          "lastEntityId": "venue:piste-d-athletisme-191",
+          "sha256": "ef38c5a36332deb29352f264f51f350ecb17d0676653f2fc2a45f9c7ad37ab9f"
+        },
+        {
+          "file": "part-001-04.jsonl",
+          "sizeBytes": 3861,
+          "entityCount": 10,
+          "firstEntityId": "venue:karting-de-chang",
+          "lastEntityId": "venue:route-4",
+          "sha256": "5a943717e18f7cb561666abc081b8f6204d9a6be83a35bdcd1ce3992561c612d"
+        },
+        {
+          "file": "part-001-05.jsonl",
+          "sizeBytes": 4681,
+          "entityCount": 10,
+          "firstEntityId": "venue:square-de-l-aspirant-dunand",
+          "lastEntityId": "venue:cart-1653",
+          "sha256": "980a4c32749bf54398c023197b1df7afc61b5e87a3ed34ae26ccf163a9ac3ab6"
+        },
+        {
+          "file": "part-001-06.jsonl",
+          "sizeBytes": 4359,
+          "entityCount": 10,
+          "firstEntityId": "venue:biblioth-que-municipale-mairie-7",
+          "lastEntityId": "venue:biblioth-que-de-champ-sur-layon-2",
+          "sha256": "5634d4ab40afd19378d8381eb439c0c0529607fe82cb0f3cd1c55512da80f8f0"
+        },
+        {
+          "file": "part-001-07.jsonl",
+          "sizeBytes": 8926,
+          "entityCount": 10,
+          "firstEntityId": "venue:ch-teau-du-vieux-ch-telier-dit-aussi-du-vieux-rodeau",
+          "lastEntityId": "venue:laiterie-fromagerie-disparue-maison-entrep-t-industriel-4-rue-de-la-quincaillerie",
+          "sha256": "8caef1503f62d68b94f42178612fa80fbfb1b1dffaf27bd0e018f3c2b308baaf"
+        },
+        {
+          "file": "part-001-08.jsonl",
+          "sizeBytes": 3849,
+          "entityCount": 10,
+          "firstEntityId": "venue:grande-boucle-de-randonn-e",
+          "lastEntityId": "venue:terrain-de-football-842",
+          "sha256": "3b5db5e5e65fe8ae4b57c1f5c010d7f9a032fe9ac8e0b03c9628418985c0c522"
+        },
+        {
+          "file": "part-001-09.jsonl",
+          "sizeBytes": 3755,
+          "entityCount": 10,
+          "firstEntityId": "venue:station-de-m-tro-31",
+          "lastEntityId": "venue:monsieur-dominique-cazenave",
+          "sha256": "4dfd5cf213804f4dba415628a61cd4f8bc62211e22bf55ece1e0a7688befdb9a"
+        },
+        {
+          "file": "part-001-10.jsonl",
+          "sizeBytes": 3232,
+          "entityCount": 10,
+          "firstEntityId": "venue:terrains-de-p-tanque-2-16",
+          "lastEntityId": "venue:ferme-6058",
+          "sha256": "4a21eb949744402d48867f8ca37d157159f24c8a07ceffacd4aa3d4ebd302f3c"
+        }
+      ]
     },
     {
       "file": "part-002.jsonl",
-      "startIndex": 101,
-      "endIndex": 200,
+      "sha256": "6a5021f68510fc92dbb61674a2f7fef0ac66eda907e998a2b6c353399e323a84",
       "entityCount": 100,
-      "sha256": "6a5021f68510fc92dbb61674a2f7fef0ac66eda907e998a2b6c353399e323a84"
+      "subParts": [
+        {
+          "file": "part-002-01.jsonl",
+          "sizeBytes": 4490,
+          "entityCount": 10,
+          "firstEntityId": "venue:fenay",
+          "lastEntityId": "venue:chambres-d-h-tes-un-petit-ch-teau",
+          "sha256": "5dca256a6ffc6152bce1974647c054db7e187ae43d9af830262e7f4b4f958b59"
+        },
+        {
+          "file": "part-002-02.jsonl",
+          "sizeBytes": 5000,
+          "entityCount": 10,
+          "firstEntityId": "venue:gisement-pr-historique-de-la-rochette",
+          "lastEntityId": "venue:centre-sportif-rene-et-andre-mourlon",
+          "sha256": "d86d4dfaad025fbbd61506e8d6444b374847f31b3d4f1e95a2c1d41ef548c84c"
+        },
+        {
+          "file": "part-002-03.jsonl",
+          "sizeBytes": 3443,
+          "entityCount": 10,
+          "firstEntityId": "venue:terrain-de-basket-ball-529",
+          "lastEntityId": "venue:tep-pierre-reverdy",
+          "sha256": "da9a8e63fdc5ef1df3c76a810c6431bc0ab5e56561fade1f40ac538228266b69"
+        },
+        {
+          "file": "part-002-04.jsonl",
+          "sizeBytes": 4298,
+          "entityCount": 10,
+          "firstEntityId": "venue:ensemble-de-2-maisons-de-vigneron-3",
+          "lastEntityId": "venue:boulodrome-de-manduel",
+          "sha256": "5cc69b2da453fa992db83a78c40b6b3b712ee3b7a24ed8c0969f28da9d1e08c1"
+        },
+        {
+          "file": "part-002-05.jsonl",
+          "sizeBytes": 3718,
+          "entityCount": 10,
+          "firstEntityId": "venue:calvaire-277",
+          "lastEntityId": "venue:just-move",
+          "sha256": "2fb80f0c8c386e1c95afa2bbdc5b1637c82b1e1ebd8ae2e5201a5962f9875fe0"
+        },
+        {
+          "file": "part-002-06.jsonl",
+          "sizeBytes": 3703,
+          "entityCount": 10,
+          "firstEntityId": "venue:salle-polyvalente-983",
+          "lastEntityId": "venue:immeuble-534",
+          "sha256": "e914921fa84a134bf558644a5351310c1a62207ecb94649b525ae51c678d7fe2"
+        },
+        {
+          "file": "part-002-07.jsonl",
+          "sizeBytes": 7004,
+          "entityCount": 10,
+          "firstEntityId": "venue:oratoire-du-gros-doigt",
+          "lastEntityId": "venue:toilettes-publiques-paris-178",
+          "sha256": "634f530a6413d6df9b85a1e66a1a32aab55ce06360d8162ac85ba63b90e21786"
+        },
+        {
+          "file": "part-002-08.jsonl",
+          "sizeBytes": 3787,
+          "entityCount": 10,
+          "firstEntityId": "venue:salle-multisports-180",
+          "lastEntityId": "venue:ferme-1310",
+          "sha256": "94a9e9571863485617bcbf85b563b472eae2f441f66bd04c1853509167913c07"
+        },
+        {
+          "file": "part-002-09.jsonl",
+          "sizeBytes": 3780,
+          "entityCount": 10,
+          "firstEntityId": "venue:city-stades-28",
+          "lastEntityId": "venue:bourg-grange-table-actuellement-maison-15-rue-de-la-mairie",
+          "sha256": "1d913bb30ff4daef7bbe27b9438d60f7aee301201493bfdef873703a449ad85f"
+        },
+        {
+          "file": "part-002-10.jsonl",
+          "sizeBytes": 4469,
+          "entityCount": 10,
+          "firstEntityId": "venue:ctm-2",
+          "lastEntityId": "venue:chez-evelyne-et-titou-evelyne-chevalley",
+          "sha256": "0cb33ff94fe1023d53fe71d4436d5ede6c2aaed694016a416e7d023b8998abef"
+        }
+      ]
     },
     {
       "file": "part-003.jsonl",
-      "startIndex": 201,
-      "endIndex": 300,
+      "sha256": "61058b649994bf0788a89ce67a52b9221c6cdfa748d43f21dcd5f865dc5692eb",
       "entityCount": 100,
-      "sha256": "61058b649994bf0788a89ce67a52b9221c6cdfa748d43f21dcd5f865dc5692eb"
+      "subParts": [
+        {
+          "file": "part-003-01.jsonl",
+          "sizeBytes": 3786,
+          "entityCount": 10,
+          "firstEntityId": "venue:gr-du-pays-cordes-penne",
+          "lastEntityId": "venue:for-t-r-gionale-de-la-roche-guyon-42",
+          "sha256": "a5f61730eddfad117215e2ac8c274c38f1f43e9fde29867a95ec34b359551fdd"
+        },
+        {
+          "file": "part-003-02.jsonl",
+          "sizeBytes": 5579,
+          "entityCount": 10,
+          "firstEntityId": "venue:bois-de-morval-2",
+          "lastEntityId": "venue:boucle-de-randonn-e-questre-7",
+          "sha256": "14c5bf64ea29ee22de4216d8925941669ef4d5017dec6c35d025023cb9af003b"
+        },
+        {
+          "file": "part-003-03.jsonl",
+          "sizeBytes": 10043,
+          "entityCount": 10,
+          "firstEntityId": "venue:les-lilas-3",
+          "lastEntityId": "venue:tilloux-ferme",
+          "sha256": "2187c08476f2636c5cc7119089b7d1e5fee133b1060e28517972cf4b5569ebd6"
+        },
+        {
+          "file": "part-003-04.jsonl",
+          "sizeBytes": 4829,
+          "entityCount": 10,
+          "firstEntityId": "venue:cole-mairie-cimeti-re-gare",
+          "lastEntityId": "venue:la-maison-de-coco",
+          "sha256": "36a4f347f26d2069b3531f5a05d648d0c62a543d06040cf698f99fd4a46a5127"
+        },
+        {
+          "file": "part-003-05.jsonl",
+          "sizeBytes": 4252,
+          "entityCount": 10,
+          "firstEntityId": "venue:cin-ma-lux",
+          "lastEntityId": "venue:cole-406",
+          "sha256": "31e287951131e41fc3c3e5309a768d0f530cc4903719b8666160738edde4c4c6"
+        },
+        {
+          "file": "part-003-06.jsonl",
+          "sizeBytes": 4243,
+          "entityCount": 10,
+          "firstEntityId": "venue:vigneux-sur-seine-2",
+          "lastEntityId": "venue:biblioth-que-municipale-de-saint-hilaire-de-loulay",
+          "sha256": "066e19ffdb6e9a96e2f9fa6f26ca67fd1e9fc2a29d45101e18ab7cf6166c600d"
+        },
+        {
+          "file": "part-003-07.jsonl",
+          "sizeBytes": 4370,
+          "entityCount": 10,
+          "firstEntityId": "venue:ben-romdhane-ezzedine",
+          "lastEntityId": "venue:bibli-encisse-valencisse",
+          "sha256": "37f091ce82b4f75c6a40f19b96de92ab97dd17e81b1cb1a6e3740a5014ca87c7"
+        },
+        {
+          "file": "part-003-08.jsonl",
+          "sizeBytes": 5079,
+          "entityCount": 10,
+          "firstEntityId": "venue:chapelle-sainte-marguerite",
+          "lastEntityId": "venue:stationnement-v-lo-arceaux-eaubonne-14",
+          "sha256": "70ef09cec6f3a33606e5cac77337534938a380d45d90b985ec37b3e6db0a92b6"
+        },
+        {
+          "file": "part-003-09.jsonl",
+          "sizeBytes": 3114,
+          "entityCount": 10,
+          "firstEntityId": "venue:d-couverte-de-l-orgue-porte-ouverte",
+          "lastEntityId": "venue:croix-de-chemin-2695",
+          "sha256": "3f63fced5530debe6d102759a9daeec805da5fade76e092b9faa02f8b680af53"
+        },
+        {
+          "file": "part-003-10.jsonl",
+          "sizeBytes": 4518,
+          "entityCount": 10,
+          "firstEntityId": "venue:ch-teau-1149",
+          "lastEntityId": "venue:camping-les-rives-de-l-adour",
+          "sha256": "e09aaa09b45b019a2862e1bd9efcb91b967a140bfcd00d7fa06fd67dd597f511"
+        }
+      ]
     },
     {
       "file": "part-004.jsonl",
-      "startIndex": 301,
-      "endIndex": 400,
+      "sha256": "656f1e1fa922052699fca5716e032d3c73b1e56250f5902db3c988573691235d",
       "entityCount": 100,
-      "sha256": "656f1e1fa922052699fca5716e032d3c73b1e56250f5902db3c988573691235d"
+      "subParts": [
+        {
+          "file": "part-004-01.jsonl",
+          "sizeBytes": 3692,
+          "entityCount": 10,
+          "firstEntityId": "venue:site-de-plongee-la-pomme-de-pin",
+          "lastEntityId": "venue:l-2",
+          "sha256": "76332a3d58d09dda2ea434ccd2b3642358912ae1bf866b7fd8f9891d721dceec"
+        },
+        {
+          "file": "part-004-02.jsonl",
+          "sizeBytes": 4495,
+          "entityCount": 10,
+          "firstEntityId": "venue:gymnase-voltaire-3",
+          "lastEntityId": "venue:parcours-de-course-d-orientation-carte-randonn-e-causse-de-mende",
+          "sha256": "94052f524a5b1b19b4992f7c1aba200f47af1d2c262130f67a038b05c13ea34e"
+        },
+        {
+          "file": "part-004-03.jsonl",
+          "sizeBytes": 4956,
+          "entityCount": 10,
+          "firstEntityId": "venue:au-fil-de-la-dordogne-d-couverte-de-la-corr-ze-en-xaintrie",
+          "lastEntityId": "venue:la-vall-e-s-che",
+          "sha256": "a11824b8c3c74e88b5ef78a0af4ac77d2e72d632e714310916a11a82906c6589"
+        },
+        {
+          "file": "part-004-04.jsonl",
+          "sizeBytes": 3361,
+          "entityCount": 10,
+          "firstEntityId": "venue:courts-ext-rieurs-r-sine",
+          "lastEntityId": "venue:salle-polyvalente-1131",
+          "sha256": "c887e1b6dc50a33665c833756fa43ace2ea33a3272a531e5bd485fb1f7e45018"
+        },
+        {
+          "file": "part-004-05.jsonl",
+          "sizeBytes": 4002,
+          "entityCount": 10,
+          "firstEntityId": "venue:43-bibliotheque-departementale-de-pret-de-la-haute-loire",
+          "lastEntityId": "venue:festival-cantica-sacra-rocamadour",
+          "sha256": "48597601c3ae559c9c42ba0173e64af10a7dc75dd45b0ce7c404ea51a188e0b9"
+        },
+        {
+          "file": "part-004-06.jsonl",
+          "sizeBytes": 4043,
+          "entityCount": 10,
+          "firstEntityId": "venue:war-on-screen",
+          "lastEntityId": "venue:plateau-eps-416",
+          "sha256": "37b3d5adb669ccca08960f1231c68fad4339e626b770e763b84865d45a4c32d5"
+        },
+        {
+          "file": "part-004-07.jsonl",
+          "sizeBytes": 4414,
+          "entityCount": 10,
+          "firstEntityId": "venue:pr-sentation-de-la-commune-de-luc-la-primaube",
+          "lastEntityId": "venue:location-g-tes-de-france-r-f-19g5154",
+          "sha256": "4348ed5fecfbced3a68285d04c412db3ee6fbbf2143207905f61a4bd744fb423"
+        },
+        {
+          "file": "part-004-08.jsonl",
+          "sizeBytes": 3756,
+          "entityCount": 10,
+          "firstEntityId": "venue:impasse-route-de-paris",
+          "lastEntityId": "venue:h-tel-restaurant-la-belle-epoque",
+          "sha256": "e3c102c3f3471459fea921fbbb1a980e161fc9af5d9e38b029160b80c42b07fd"
+        },
+        {
+          "file": "part-004-09.jsonl",
+          "sizeBytes": 3794,
+          "entityCount": 10,
+          "firstEntityId": "venue:immeuble-1183",
+          "lastEntityId": "venue:cluny-danse",
+          "sha256": "038387c51e7a56e39c1df17f736096ad38cd7708ae6410778c52009dcdc605d4"
+        },
+        {
+          "file": "part-004-10.jsonl",
+          "sizeBytes": 3362,
+          "entityCount": 10,
+          "firstEntityId": "venue:cercle-hippique-de-la-breche-aux-loups",
+          "lastEntityId": "venue:cellier-13",
+          "sha256": "b24074eaf05d312482de69e856d7497626ee645a08ea294310424a64fcda2e05"
+        }
+      ]
     },
     {
       "file": "part-005.jsonl",
-      "startIndex": 401,
-      "endIndex": 500,
+      "sha256": "f94edd371f620e8cde912101b14c926516d8fb38eec92c6eb3ada4eb1bdb0627",
       "entityCount": 100,
-      "sha256": "f94edd371f620e8cde912101b14c926516d8fb38eec92c6eb3ada4eb1bdb0627"
+      "subParts": [
+        {
+          "file": "part-005-01.jsonl",
+          "sizeBytes": 5892,
+          "entityCount": 10,
+          "firstEntityId": "venue:mur-d-escalade-156",
+          "lastEntityId": "venue:moulin-farine-de-l-etang-actuellement-maison-nogent-le-bernard",
+          "sha256": "bccaac1fdc0df8e19cf2c292999f57b9ed628cdf34464c800a9115c43708300f"
+        },
+        {
+          "file": "part-005-02.jsonl",
+          "sizeBytes": 3810,
+          "entityCount": 10,
+          "firstEntityId": "venue:biblioth-que-municipale-264",
+          "lastEntityId": "venue:survol-en-biplan-de-la-c-te-d-emeraude",
+          "sha256": "5ddedc5915852f5a7294ff6b70dd7dcca9711cecd0f0f4de21c189dd7f8c536f"
+        },
+        {
+          "file": "part-005-03.jsonl",
+          "sizeBytes": 4429,
+          "entityCount": 10,
+          "firstEntityId": "venue:terrain-de-l-afpa",
+          "lastEntityId": "venue:pr-28-petit-tour-d-haget",
+          "sha256": "0e9c15ed8dff6bcf467de02c26efbddc9bc414c7ecd025a9b13822dd2a3d183e"
+        },
+        {
+          "file": "part-005-04.jsonl",
+          "sizeBytes": 3963,
+          "entityCount": 10,
+          "firstEntityId": "venue:salle-de-musculation-reserve-au-personnel",
+          "lastEntityId": "venue:madame-isabelle-robin",
+          "sha256": "0a2ca6d056f8f109a41d5f72419487470b85a1b1e3d5a3bf0ccadfeeb26eba1b"
+        },
+        {
+          "file": "part-005-05.jsonl",
+          "sizeBytes": 4271,
+          "entityCount": 10,
+          "firstEntityId": "venue:biblioth-que-municipale-1261",
+          "lastEntityId": "venue:maison-9977",
+          "sha256": "0326a8fde5b06237e937d8cb66e7f46be3b1b9412b88a3db8965022c87123cc1"
+        },
+        {
+          "file": "part-005-06.jsonl",
+          "sizeBytes": 3508,
+          "entityCount": 10,
+          "firstEntityId": "venue:terrain-de-football-de-la-couronne",
+          "lastEntityId": "venue:boucle-1",
+          "sha256": "e9dd46d1d175de0e9053878a73287f44e68c19b116afce1f3872c118384a89a5"
+        },
+        {
+          "file": "part-005-07.jsonl",
+          "sizeBytes": 4287,
+          "entityCount": 10,
+          "firstEntityId": "venue:ch-teau-du-coudray-montbault",
+          "lastEntityId": "venue:piste-d-athletisme-isole-2",
+          "sha256": "a06449739154bdba157965b6d846aa6abe334eedcef31df825415354b97e81f1"
+        },
+        {
+          "file": "part-005-08.jsonl",
+          "sizeBytes": 3301,
+          "entityCount": 10,
+          "firstEntityId": "venue:monument-fun-raire-5",
+          "lastEntityId": "venue:biblioth-que-municipale-de-m-asnes",
+          "sha256": "2331db1b053923689981078a55c0f327c8930d8ceae26bb60debf2b6beeb55f5"
+        },
+        {
+          "file": "part-005-09.jsonl",
+          "sizeBytes": 3227,
+          "entityCount": 10,
+          "firstEntityId": "venue:terrain-d-honneur-145",
+          "lastEntityId": "venue:terrain-de-p-tanque-n-2-12",
+          "sha256": "0694c6a34c873d5c1afed01a9e121f1645ad1d93d858a2b7e9ee3e84d79ff09e"
+        },
+        {
+          "file": "part-005-10.jsonl",
+          "sizeBytes": 5350,
+          "entityCount": 10,
+          "firstEntityId": "venue:plaque-de-chemin-e",
+          "lastEntityId": "venue:pin-de-corse-laricio-10",
+          "sha256": "b7e61f9fe6529d96fde933eac2db7c0521f03a4109df4b2ae51eba8759a45ab6"
+        }
+      ]
     }
   ],
-  "sourceSha256": "9a816959f36ed76874e92b9a6d652f6d997c962baeee62ffe08b778241581bd7",
-  "reconstructedSha256": "9a816959f36ed76874e92b9a6d652f6d997c962baeee62ffe08b778241581bd7",
-  "reconstructionMatchesSource": true,
-  "generatedBy": "apps/api/scripts/validation/phase43/splitExternalCorpus.ts",
+  "checks": [
+    {
+      "name": "chaque part source contient exactement 100 lignes",
+      "ok": true,
+      "detail": "100/100/100/100/100"
+    },
+    {
+      "name": "chaque sous-partie contient exactement 10 lignes",
+      "ok": true,
+      "detail": "min=10 max=10"
+    },
+    {
+      "name": "les 50 sous-parties = 500 lignes au total",
+      "ok": true,
+      "detail": "500"
+    },
+    {
+      "name": "entityId uniques dans l'original ET dans les sous-parties",
+      "ok": true
+    },
+    {
+      "name": "ordre des entityId concaténés == corpus original",
+      "ok": true
+    },
+    {
+      "name": "SHA-256 concaténation des 50 == SHA-256 corpus original",
+      "ok": true,
+      "detail": "true"
+    },
+    {
+      "name": "aucune ligne perdue",
+      "ok": true
+    },
+    {
+      "name": "aucune ligne dupliquée",
+      "ok": true,
+      "detail": "0 doublon(s)"
+    },
+    {
+      "name": "chaque JSON syntaxiquement valide",
+      "ok": true
+    },
+    {
+      "name": "chaque sous-fichier == source octet pour octet (records)",
+      "ok": true
+    }
+  ],
+  "generatedBy": "apps/api/scripts/validation/phase43/splitPartsIntoTen.ts",
   "note": "Découpage physique octet-pour-octet ; aucune classification, aucun LLM, aucun import, aucune modification de contenu."
 }
