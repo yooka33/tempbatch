@@ -1,107 +1,48 @@
 {
-  "batchId": "external-taxonomy-batch-001",
-  "phase": "43",
-  "generatedAt": "2026-08-13T16:24:17.064Z",
-  "batchIndex": 1,
-  "batchSize": 500,
-  "offset": 0,
-  "selectionMethod": "échantillon représentatif déterministe : tri par SHA-256(entityType:entityId), tranche [offset, offset+size). Reproductible ; --batch=N pour la tranche suivante sans réexporter.",
-  "total": 500,
-  "catalog": {
-    "path": "C:\\Users\\yooka\\Desktop\\App dev\\App Creation\\Radius\\apps\\api\\data\\catalog.sqlite",
-    "venuesScanned": 455640,
-    "futureEventsScanned": 8744,
-    "eligibleTotal": 438136,
-    "eligibleByEntityType": {
-      "venue": 387314,
-      "hotel": 36515,
-      "restaurant": 14182,
-      "event": 125
+  "source": "corpus-batch-001.jsonl",
+  "sourceEntityCount": 500,
+  "partCount": 5,
+  "entitiesPerPart": 100,
+  "parts": [
+    {
+      "file": "part-001.jsonl",
+      "startIndex": 1,
+      "endIndex": 100,
+      "entityCount": 100,
+      "sha256": "fa1e91a6dae1fb9ea70400120cd2ede76a4dc1c8a5701b08e18c027c2eae8dfd"
+    },
+    {
+      "file": "part-002.jsonl",
+      "startIndex": 101,
+      "endIndex": 200,
+      "entityCount": 100,
+      "sha256": "6a5021f68510fc92dbb61674a2f7fef0ac66eda907e998a2b6c353399e323a84"
+    },
+    {
+      "file": "part-003.jsonl",
+      "startIndex": 201,
+      "endIndex": 300,
+      "entityCount": 100,
+      "sha256": "61058b649994bf0788a89ce67a52b9221c6cdfa748d43f21dcd5f865dc5692eb"
+    },
+    {
+      "file": "part-004.jsonl",
+      "startIndex": 301,
+      "endIndex": 400,
+      "entityCount": 100,
+      "sha256": "656f1e1fa922052699fca5716e032d3c73b1e56250f5902db3c988573691235d"
+    },
+    {
+      "file": "part-005.jsonl",
+      "startIndex": 401,
+      "endIndex": 500,
+      "entityCount": 100,
+      "sha256": "f94edd371f620e8cde912101b14c926516d8fb38eec92c6eb3ada4eb1bdb0627"
     }
-  },
-  "exclusionCriterion": "exclu si ANALYZED ou ANALYZING dans semantic_enrichment (clé entityType:entityId). Présence au catalogue ≠ enrichissement. FAILED reste éligible.",
-  "semanticSnapshot": {
-    "source": "copie lecture seule de C:\\Users\\yooka\\Desktop\\App dev\\App Creation\\Radius\\apps\\api\\data\\semantic-enrichment.sqlite",
-    "analyzedByType": {
-      "venue": 3529,
-      "restaurant": 9699,
-      "hotel": 4500,
-      "event": 10363
-    },
-    "analyzedTotal": 28091,
-    "analyzingTotal": 1,
-    "failedTotal": 1342
-  },
-  "composition": {
-    "byEntityType": {
-      "venue": 429,
-      "hotel": 59,
-      "restaurant": 12
-    },
-    "byDataTier": {
-      "rich": 89,
-      "poor": 283,
-      "medium": 128
-    },
-    "byRegion": {
-      "75 Nouvelle-Aquitaine": 84,
-      "76 Occitanie": 50,
-      "53 Bretagne": 66,
-      "(inconnue)": 15,
-      "24 Centre-Val de Loire": 47,
-      "93 Provence-Alpes-Côte d'Azur": 22,
-      "11 Île-de-France": 120,
-      "94 Corse": 2,
-      "52 Pays de la Loire": 41,
-      "84 Auvergne-Rhône-Alpes": 22,
-      "27 Bourgogne-Franche-Comté": 11,
-      "28 Normandie": 4,
-      "44 Grand Est": 11,
-      "32 Hauts-de-France": 5
-    },
-    "byCatalogDomain": {
-      "outdoor": 11,
-      "patrimoine": 153,
-      "autre": 37,
-      "hebergement": 59,
-      "sport": 138,
-      "culture": 26,
-      "gastronomie": 12,
-      "tourisme": 13,
-      "mobilite": 29,
-      "nature": 22
-    },
-    "failedRecords": 1,
-    "neverAnalyzed": 499,
-    "avgCompleteness": 0.23
-  },
-  "contract": {
-    "taxonomyVersion": "2026.2",
-    "analysisVersion": "4",
-    "resultLineShape": {
-      "entityId": "string",
-      "entityType": "string",
-      "categories": "string[]",
-      "attributes": "object?",
-      "confidence": "number",
-      "seedModel": "string?"
-    },
-    "abstention": "une entité pauvre/ambiguë ne doit jamais être forcée : renvoyer categories vide = ne rien importer pour elle"
-  },
-  "files": {
-    "corpus": "corpus-batch-001.jsonl",
-    "exportIndex": "batch-0001.input.jsonl",
-    "taxonomyJson": "taxonomy-reference.json",
-    "taxonomyMd": "taxonomy-reference.md"
-  },
-  "sha256": {
-    "corpus-batch-001.jsonl": "9a816959f36ed76874e92b9a6d652f6d997c962baeee62ffe08b778241581bd7",
-    "batch-0001.input.jsonl": "75a0aec1274554b28973323ea41622122f8d68b5ea1bd3669d736a8d89af0701",
-    "taxonomy-reference.json": "6fa80b45f4fc7a36dac891219bb5e1b0264b61f8c4aae4a920f3e311e18dd262",
-    "taxonomy-reference.md": "d548b3228d298dc2ce824151f2a115491d88b81d01a5aa620bddd8edff370e26"
-  },
-  "llmCalled": false,
-  "productionModified": false,
-  "catalogModified": false,
-  "semanticModified": false
+  ],
+  "sourceSha256": "9a816959f36ed76874e92b9a6d652f6d997c962baeee62ffe08b778241581bd7",
+  "reconstructedSha256": "9a816959f36ed76874e92b9a6d652f6d997c962baeee62ffe08b778241581bd7",
+  "reconstructionMatchesSource": true,
+  "generatedBy": "apps/api/scripts/validation/phase43/splitExternalCorpus.ts",
+  "note": "Découpage physique octet-pour-octet ; aucune classification, aucun LLM, aucun import, aucune modification de contenu."
 }
