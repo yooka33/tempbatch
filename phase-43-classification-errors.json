@@ -1,0 +1,582 @@
+{
+  "meta": {
+    "generatedFor": "correction externe (ChatGPT) — Phase 43",
+    "sourceReport": "C:/Users/yooka/Desktop/TAXONOMY/consolidated/phase-43-import-readiness.md",
+    "sourceCorpusDir": "C:/Users/yooka/Desktop/TAXONOMY",
+    "taxonomyAuthority": "taxonomy-reference.json (v2026.2) via validateAnalysisResult",
+    "rules": [
+      "AUCUNE classification corrigée",
+      "AUCUN JSONL modifié",
+      "suggestedValidCategories laissé vide volontairement",
+      "aucune catégorie devinée"
+    ]
+  },
+  "entityTypeMismatch": [
+    {
+      "entityId": "venue:havre-familial-avec-piscine-deux-pas-du-mans",
+      "entityType": "hotel",
+      "corpusEntityType": "venue",
+      "classifiedEntityType": "hotel",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 19,
+      "currentCategories": ["hotel.family"],
+      "invalidCategories": [],
+      "sourceData": {
+        "entityId": "venue:havre-familial-avec-piscine-deux-pas-du-mans",
+        "nameSlug": "havre-familial-avec-piscine-deux-pas-du-mans",
+        "entityType": "hotel",
+        "categories": ["hotel.family"],
+        "confidence": 0.98,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "Rejet 'unknown-entity' : l'entityType classé 'hotel' ne correspond pas à l'entityType du corpus/export 'venue' pour cet entityId → impossible à rattacher au catalogue (batch-0001.input.jsonl). Les catégories elles-mêmes (hotel.family) sont valides ; c'est le mismatch entityType qui bloque.",
+      "suggestedValidCategories": []
+    }
+  ],
+  "invalidCategories": [
+    {
+      "entityId": "venue:practice-67",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 7,
+      "currentCategories": ["place.sport.golf"],
+      "invalidCategories": ["place.sport.golf"],
+      "sourceData": {
+        "entityId": "venue:practice-67",
+        "nameSlug": "practice-67",
+        "entityType": "venue",
+        "categories": ["place.sport.golf"],
+        "attributes": { "outdoor": true },
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.golf inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:croisi-re-aux-lueurs-du-soir-d-tours-en-loire",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 48,
+      "currentCategories": ["place.boat-trip"],
+      "invalidCategories": ["place.boat-trip"],
+      "sourceData": {
+        "entityId": "venue:croisi-re-aux-lueurs-du-soir-d-tours-en-loire",
+        "nameSlug": "croisi-re-aux-lueurs-du-soir-d-tours-en-loire",
+        "entityType": "venue",
+        "categories": ["place.boat-trip"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.boat-trip inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:salle-de-cardiotraining-8",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 53,
+      "currentCategories": ["place.sport.fitness"],
+      "invalidCategories": ["place.sport.fitness"],
+      "sourceData": {
+        "entityId": "venue:salle-de-cardiotraining-8",
+        "nameSlug": "salle-de-cardiotraining-8",
+        "entityType": "venue",
+        "categories": ["place.sport.fitness"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.fitness inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:h-tel-de-la-place-des-alpes",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 58,
+      "currentCategories": ["place.hotel"],
+      "invalidCategories": ["place.hotel"],
+      "sourceData": {
+        "entityId": "venue:h-tel-de-la-place-des-alpes",
+        "nameSlug": "h-tel-de-la-place-des-alpes",
+        "entityType": "venue",
+        "categories": ["place.hotel"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.hotel inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:caravane-des-cin-mas-d-afrique",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 77,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:caravane-des-cin-mas-d-afrique",
+        "nameSlug": "caravane-des-cin-mas-d-afrique",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:chambray-en-mai",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 78,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:chambray-en-mai",
+        "nameSlug": "chambray-en-mai",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:d-couverte-de-l-orgue-porte-ouverte",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 81,
+      "currentCategories": ["place.music"],
+      "invalidCategories": ["place.music"],
+      "sourceData": {
+        "entityId": "venue:d-couverte-de-l-orgue-porte-ouverte",
+        "nameSlug": "d-couverte-de-l-orgue-porte-ouverte",
+        "entityType": "venue",
+        "categories": ["place.music"],
+        "confidence": 0.95,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.music inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:le-maudit-festival",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 96,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:le-maudit-festival",
+        "nameSlug": "le-maudit-festival",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:ose-ce-court",
+      "entityType": "venue",
+      "sourceFile": "part-003.jsonl",
+      "sourceLine": 97,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:ose-ce-court",
+        "nameSlug": "ose-ce-court",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:site-de-plongee-la-pomme-de-pin",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 1,
+      "currentCategories": ["place.sport.diving"],
+      "invalidCategories": ["place.sport.diving"],
+      "sourceData": {
+        "entityId": "venue:site-de-plongee-la-pomme-de-pin",
+        "nameSlug": "site-de-plongee-la-pomme-de-pin",
+        "entityType": "venue",
+        "categories": ["place.sport.diving"],
+        "attributes": { "outdoor": true },
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.diving inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:les-mouillotins",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 12,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:les-mouillotins",
+        "nameSlug": "les-mouillotins",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:sully-h-tel",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 39,
+      "currentCategories": ["place.hotel"],
+      "invalidCategories": ["place.hotel"],
+      "sourceData": {
+        "entityId": "venue:sully-h-tel",
+        "nameSlug": "sully-h-tel",
+        "entityType": "venue",
+        "categories": ["place.hotel"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.hotel inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:festival-cantica-sacra-rocamadour",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 50,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:festival-cantica-sacra-rocamadour",
+        "nameSlug": "festival-cantica-sacra-rocamadour",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:war-on-screen",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 51,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:war-on-screen",
+        "nameSlug": "war-on-screen",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:march-du-puy-notre-dame",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 63,
+      "currentCategories": ["place.market"],
+      "invalidCategories": ["place.market"],
+      "sourceData": {
+        "entityId": "venue:march-du-puy-notre-dame",
+        "nameSlug": "march-du-puy-notre-dame",
+        "entityType": "venue",
+        "categories": ["place.market"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.market inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:jeux-d-orgue",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 83,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:jeux-d-orgue",
+        "nameSlug": "jeux-d-orgue",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:mindje-e-care-t",
+      "entityType": "restaurant",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 87,
+      "currentCategories": ["food.tapas"],
+      "invalidCategories": ["food.tapas"],
+      "sourceData": {
+        "entityId": "venue:mindje-e-care-t",
+        "nameSlug": "mindje-e-care-t",
+        "entityType": "restaurant",
+        "categories": ["food.tapas"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "food.tapas inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis. NB : entityType 'restaurant' alors que l'entityId porte le préfixe 'venue:' (convention de slug), mais ce cas n'a PAS été signalé comme mismatch entityType par le rapport (seul havre-familial l'est vis-à-vis de l'export catalogue).",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:festival-international-de-la-calligraphie",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 88,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:festival-international-de-la-calligraphie",
+        "nameSlug": "festival-international-de-la-calligraphie",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:cluny-danse",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 90,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:cluny-danse",
+        "nameSlug": "cluny-danse",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:h-tel-le-r-gent",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 93,
+      "currentCategories": ["place.hotel"],
+      "invalidCategories": ["place.hotel"],
+      "sourceData": {
+        "entityId": "venue:h-tel-le-r-gent",
+        "nameSlug": "h-tel-le-r-gent",
+        "entityType": "venue",
+        "categories": ["place.hotel"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.hotel inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:les-rencontres-de-th-tre-amateur",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 97,
+      "currentCategories": ["place.festival"],
+      "invalidCategories": ["place.festival"],
+      "sourceData": {
+        "entityId": "venue:les-rencontres-de-th-tre-amateur",
+        "nameSlug": "les-rencontres-de-th-tre-amateur",
+        "entityType": "venue",
+        "categories": ["place.festival"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:golf-de-chevannes-mennecy-4",
+      "entityType": "venue",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 3,
+      "currentCategories": ["place.sport.golf"],
+      "invalidCategories": ["place.sport.golf"],
+      "sourceData": {
+        "entityId": "venue:golf-de-chevannes-mennecy-4",
+        "nameSlug": "golf-de-chevannes-mennecy-4",
+        "entityType": "venue",
+        "categories": ["place.sport.golf"],
+        "attributes": { "outdoor": true },
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.golf inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:salle-de-fitness-11",
+      "entityType": "venue",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 24,
+      "currentCategories": ["place.sport.fitness"],
+      "invalidCategories": ["place.sport.fitness"],
+      "sourceData": {
+        "entityId": "venue:salle-de-fitness-11",
+        "nameSlug": "salle-de-fitness-11",
+        "entityType": "venue",
+        "categories": ["place.sport.fitness"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.fitness inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:salle-de-musculation-reserve-au-personnel",
+      "entityType": "venue",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 34,
+      "currentCategories": ["place.sport.fitness"],
+      "invalidCategories": ["place.sport.fitness"],
+      "sourceData": {
+        "entityId": "venue:salle-de-musculation-reserve-au-personnel",
+        "nameSlug": "salle-de-musculation-reserve-au-personnel",
+        "entityType": "venue",
+        "categories": ["place.sport.fitness"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.fitness inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:dojo-642",
+      "entityType": "venue",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 36,
+      "currentCategories": ["place.sport.martial-arts"],
+      "invalidCategories": ["place.sport.martial-arts"],
+      "sourceData": {
+        "entityId": "venue:dojo-642",
+        "nameSlug": "dojo-642",
+        "entityType": "venue",
+        "categories": ["place.sport.martial-arts"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.martial-arts inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:la-casita-del-barrio",
+      "entityType": "restaurant",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 68,
+      "currentCategories": ["food.tapas"],
+      "invalidCategories": ["food.tapas"],
+      "sourceData": {
+        "entityId": "venue:la-casita-del-barrio",
+        "nameSlug": "la-casita-del-barrio",
+        "entityType": "restaurant",
+        "categories": ["food.tapas"],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "food.tapas inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis. NB : entityType 'restaurant' avec préfixe de slug 'venue:' — non signalé comme mismatch par le rapport.",
+      "suggestedValidCategories": []
+    }
+  ],
+  "invalidCategoryIdOccurrences": [
+    { "categoryId": "place.festival", "occurrencesInRejects": 11, "occurrencesInAccepted": 0, "totalOccurrences": 11 },
+    { "categoryId": "place.hotel", "occurrencesInRejects": 3, "occurrencesInAccepted": 0, "totalOccurrences": 3 },
+    { "categoryId": "place.sport.fitness", "occurrencesInRejects": 3, "occurrencesInAccepted": 0, "totalOccurrences": 3 },
+    { "categoryId": "place.sport.golf", "occurrencesInRejects": 2, "occurrencesInAccepted": 0, "totalOccurrences": 2 },
+    { "categoryId": "food.tapas", "occurrencesInRejects": 2, "occurrencesInAccepted": 0, "totalOccurrences": 2 },
+    { "categoryId": "place.boat-trip", "occurrencesInRejects": 1, "occurrencesInAccepted": 0, "totalOccurrences": 1 },
+    { "categoryId": "place.music", "occurrencesInRejects": 1, "occurrencesInAccepted": 0, "totalOccurrences": 1 },
+    { "categoryId": "place.sport.diving", "occurrencesInRejects": 1, "occurrencesInAccepted": 0, "totalOccurrences": 1 },
+    { "categoryId": "place.market", "occurrencesInRejects": 1, "occurrencesInAccepted": 0, "totalOccurrences": 1 },
+    { "categoryId": "place.sport.martial-arts", "occurrencesInRejects": 1, "occurrencesInAccepted": 0, "totalOccurrences": 1 },
+    { "categoryId": "hotel.fitness", "occurrencesInRejects": 0, "occurrencesInAccepted": 1, "totalOccurrences": 1, "note": "N'apparaît dans AUCUN des 27 rejets. Présente dans une classification ACCEPTÉE : venue:hype-h-tel (part-003.jsonl:67, categories=[hotel.family, hotel.fitness]). hotel.fitness a été filtrée comme inconnue mais la ligne conserve hotel.family (valide) → acceptée, pas rejetée." }
+  ],
+  "verification": {
+    "expected": {
+      "rejectedClassifications": 27,
+      "invalidCategoryIds": 11,
+      "entityTypeMismatches": 1
+    },
+    "observed": {
+      "rejectedClassifications": 27,
+      "invalidAnalysisRejects": 26,
+      "unknownEntityRejects": 1,
+      "entityTypeMismatches": 1,
+      "distinctInvalidCategoryIds": 11,
+      "distinctInvalidCategoryIdsUsedInRejects": 10,
+      "invalidCategoryOccurrencesInRejects": 26,
+      "invalidCategoryOccurrencesTotalCorpus": 27
+    },
+    "counts_match": true,
+    "correspondence_27_rejects_to_11_ids": {
+      "isOneToOne": false,
+      "explanation": "Les 27 rejets ne couvrent que 10 des 11 IDs invalides. Le 11e ID (hotel.fitness) ne provoque AUCUN rejet : il apparaît dans une classification acceptée (venue:hype-h-tel, part-003.jsonl:67) qui conserve une catégorie valide (hotel.family). Les 26 rejets 'invalid-analysis' portent chacun exactement 1 catégorie invalide (= 26 occurrences), et le 27e rejet (havre-familial) est un 'unknown-entity' / mismatch entityType dont la catégorie (hotel.family) est valide.",
+      "idsUsedInRejects": [
+        "place.festival",
+        "place.hotel",
+        "place.sport.fitness",
+        "place.sport.golf",
+        "food.tapas",
+        "place.boat-trip",
+        "place.music",
+        "place.sport.diving",
+        "place.market",
+        "place.sport.martial-arts"
+      ],
+      "idsNotCausingAnyReject": ["hotel.fitness"]
+    }
+  },
+  "summary": {
+    "entityTypeMismatchCount": 1,
+    "classificationsWithAtLeastOneInvalidCategory": 27,
+    "classificationsWithInvalidCategory_rejected": 26,
+    "classificationsWithInvalidCategory_accepted": 1,
+    "totalInvalidCategoryOccurrences": 27,
+    "totalInvalidCategoryOccurrences_inRejectsOnly": 26,
+    "distinctInvalidCategoryIds": 11,
+    "invalidCategoryIds": [
+      "food.tapas",
+      "hotel.fitness",
+      "place.boat-trip",
+      "place.festival",
+      "place.hotel",
+      "place.market",
+      "place.music",
+      "place.sport.diving",
+      "place.sport.fitness",
+      "place.sport.golf",
+      "place.sport.martial-arts"
+    ],
+    "rejectedClassificationsTotal": 27,
+    "rejectionBreakdown": { "invalid-analysis": 26, "unknown-entity": 1 },
+    "outputFile": "C:/Users/yooka/Desktop/TAXONOMY/consolidated/phase-43-classification-errors.json"
+  }
+}
