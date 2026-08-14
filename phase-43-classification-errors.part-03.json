@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "generatedFor": "correction externe (ChatGPT) — Phase 43",
+    "sourceReport": "C:/Users/yooka/Desktop/TAXONOMY/consolidated/phase-43-import-readiness.md",
+    "sourceCorpusDir": "C:/Users/yooka/Desktop/TAXONOMY",
+    "taxonomyAuthority": "taxonomy-reference.json (v2026.2) via validateAnalysisResult",
+    "rules": [
+      "AUCUNE classification corrigée",
+      "AUCUN JSONL modifié",
+      "suggestedValidCategories laissé vide volontairement",
+      "aucune catégorie devinée"
+    ],
+    "part": 3,
+    "ofParts": 3,
+    "contains": "invalidCategories"
+  },
+  "entityTypeMismatch": [],
+  "invalidCategories": [
+    {
+      "entityId": "venue:les-rencontres-de-th-tre-amateur",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 97,
+      "currentCategories": [
+        "place.festival"
+      ],
+      "invalidCategories": [
+        "place.festival"
+      ],
+      "sourceData": {
+        "entityId": "venue:les-rencontres-de-th-tre-amateur",
+        "nameSlug": "les-rencontres-de-th-tre-amateur",
+        "entityType": "venue",
+        "categories": [
+          "place.festival"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:golf-de-chevannes-mennecy-4",
+      "entityType": "venue",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 3,
+      "currentCategories": [
+        "place.sport.golf"
+      ],
+      "invalidCategories": [
+        "place.sport.golf"
+      ],
+      "sourceData": {
+        "entityId": "venue:golf-de-chevannes-mennecy-4",
+        "nameSlug": "golf-de-chevannes-mennecy-4",
+        "entityType": "venue",
+        "categories": [
+          "place.sport.golf"
+        ],
+        "attributes": {
+          "outdoor": true
+        },
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.golf inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:salle-de-fitness-11",
+      "entityType": "venue",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 24,
+      "currentCategories": [
+        "place.sport.fitness"
+      ],
+      "invalidCategories": [
+        "place.sport.fitness"
+      ],
+      "sourceData": {
+        "entityId": "venue:salle-de-fitness-11",
+        "nameSlug": "salle-de-fitness-11",
+        "entityType": "venue",
+        "categories": [
+          "place.sport.fitness"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.fitness inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:salle-de-musculation-reserve-au-personnel",
+      "entityType": "venue",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 34,
+      "currentCategories": [
+        "place.sport.fitness"
+      ],
+      "invalidCategories": [
+        "place.sport.fitness"
+      ],
+      "sourceData": {
+        "entityId": "venue:salle-de-musculation-reserve-au-personnel",
+        "nameSlug": "salle-de-musculation-reserve-au-personnel",
+        "entityType": "venue",
+        "categories": [
+          "place.sport.fitness"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.fitness inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:dojo-642",
+      "entityType": "venue",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 36,
+      "currentCategories": [
+        "place.sport.martial-arts"
+      ],
+      "invalidCategories": [
+        "place.sport.martial-arts"
+      ],
+      "sourceData": {
+        "entityId": "venue:dojo-642",
+        "nameSlug": "dojo-642",
+        "entityType": "venue",
+        "categories": [
+          "place.sport.martial-arts"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.sport.martial-arts inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:la-casita-del-barrio",
+      "entityType": "restaurant",
+      "sourceFile": "part-005.jsonl",
+      "sourceLine": 68,
+      "currentCategories": [
+        "food.tapas"
+      ],
+      "invalidCategories": [
+        "food.tapas"
+      ],
+      "sourceData": {
+        "entityId": "venue:la-casita-del-barrio",
+        "nameSlug": "la-casita-del-barrio",
+        "entityType": "restaurant",
+        "categories": [
+          "food.tapas"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "food.tapas inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis. NB : entityType 'restaurant' avec préfixe de slug 'venue:' — non signalé comme mismatch par le rapport.",
+      "suggestedValidCategories": []
+    }
+  ],
+  "partSummary": {
+    "partIndex": 3,
+    "ofParts": 3,
+    "invalidCategoriesInThisPart": 6,
+    "entityTypeMismatchInThisPart": 0
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "generatedFor": "correction externe (ChatGPT) — Phase 43",
+    "sourceReport": "C:/Users/yooka/Desktop/TAXONOMY/consolidated/phase-43-import-readiness.md",
+    "sourceCorpusDir": "C:/Users/yooka/Desktop/TAXONOMY",
+    "taxonomyAuthority": "taxonomy-reference.json (v2026.2) via validateAnalysisResult",
+    "rules": [
+      "AUCUNE classification corrigée",
+      "AUCUN JSONL modifié",
+      "suggestedValidCategories laissé vide volontairement",
+      "aucune catégorie devinée"
+    ]
+  },
+  "parts": [
+    {
+      "part": 1,
+      "file": "phase-43-classification-errors.part-01.json",
+      "invalidCategories": 10,
+      "entityTypeMismatch": 1
+    },
+    {
+      "part": 2,
+      "file": "phase-43-classification-errors.part-02.json",
+      "invalidCategories": 10,
+      "entityTypeMismatch": 0
+    },
+    {
+      "part": 3,
+      "file": "phase-43-classification-errors.part-03.json",
+      "invalidCategories": 6,
+      "entityTypeMismatch": 0
+    }
+  ],
+  "summary": {
+    "entityTypeMismatchCount": 1,
+    "classificationsWithAtLeastOneInvalidCategory": 27,
+    "classificationsWithInvalidCategory_rejected": 26,
+    "classificationsWithInvalidCategory_accepted": 1,
+    "totalInvalidCategoryOccurrences": 27,
+    "totalInvalidCategoryOccurrences_inRejectsOnly": 26,
+    "distinctInvalidCategoryIds": 11,
+    "invalidCategoryIds": [
+      "food.tapas",
+      "hotel.fitness",
+      "place.boat-trip",
+      "place.festival",
+      "place.hotel",
+      "place.market",
+      "place.music",
+      "place.sport.diving",
+      "place.sport.fitness",
+      "place.sport.golf",
+      "place.sport.martial-arts"
+    ],
+    "rejectedClassificationsTotal": 27,
+    "rejectionBreakdown": {
+      "invalid-analysis": 26,
+      "unknown-entity": 1
+    },
+    "outputFile": "C:/Users/yooka/Desktop/TAXONOMY/consolidated/phase-43-classification-errors.json"
+  },
+  "verification": {
+    "expected": {
+      "rejectedClassifications": 27,
+      "invalidCategoryIds": 11,
+      "entityTypeMismatches": 1
+    },
+    "observed": {
+      "rejectedClassifications": 27,
+      "invalidAnalysisRejects": 26,
+      "unknownEntityRejects": 1,
+      "entityTypeMismatches": 1,
+      "distinctInvalidCategoryIds": 11,
+      "distinctInvalidCategoryIdsUsedInRejects": 10,
+      "invalidCategoryOccurrencesInRejects": 26,
+      "invalidCategoryOccurrencesTotalCorpus": 27
+    },
+    "counts_match": true,
+    "correspondence_27_rejects_to_11_ids": {
+      "isOneToOne": false,
+      "explanation": "Les 27 rejets ne couvrent que 10 des 11 IDs invalides. Le 11e ID (hotel.fitness) ne provoque AUCUN rejet : il apparaît dans une classification acceptée (venue:hype-h-tel, part-003.jsonl:67) qui conserve une catégorie valide (hotel.family). Les 26 rejets 'invalid-analysis' portent chacun exactement 1 catégorie invalide (= 26 occurrences), et le 27e rejet (havre-familial) est un 'unknown-entity' / mismatch entityType dont la catégorie (hotel.family) est valide.",
+      "idsUsedInRejects": [
+        "place.festival",
+        "place.hotel",
+        "place.sport.fitness",
+        "place.sport.golf",
+        "food.tapas",
+        "place.boat-trip",
+        "place.music",
+        "place.sport.diving",
+        "place.market",
+        "place.sport.martial-arts"
+      ],
+      "idsNotCausingAnyReject": [
+        "hotel.fitness"
+      ]
+    }
+  }
+}

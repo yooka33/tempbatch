@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "generatedFor": "correction externe (ChatGPT) — Phase 43",
+    "sourceReport": "C:/Users/yooka/Desktop/TAXONOMY/consolidated/phase-43-import-readiness.md",
+    "sourceCorpusDir": "C:/Users/yooka/Desktop/TAXONOMY",
+    "taxonomyAuthority": "taxonomy-reference.json (v2026.2) via validateAnalysisResult",
+    "rules": [
+      "AUCUNE classification corrigée",
+      "AUCUN JSONL modifié",
+      "suggestedValidCategories laissé vide volontairement",
+      "aucune catégorie devinée"
+    ],
+    "part": 2,
+    "ofParts": 3,
+    "contains": "invalidCategories"
+  },
+  "entityTypeMismatch": [],
+  "invalidCategories": [
+    {
+      "entityId": "venue:les-mouillotins",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 12,
+      "currentCategories": [
+        "place.festival"
+      ],
+      "invalidCategories": [
+        "place.festival"
+      ],
+      "sourceData": {
+        "entityId": "venue:les-mouillotins",
+        "nameSlug": "les-mouillotins",
+        "entityType": "venue",
+        "categories": [
+          "place.festival"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:sully-h-tel",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 39,
+      "currentCategories": [
+        "place.hotel"
+      ],
+      "invalidCategories": [
+        "place.hotel"
+      ],
+      "sourceData": {
+        "entityId": "venue:sully-h-tel",
+        "nameSlug": "sully-h-tel",
+        "entityType": "venue",
+        "categories": [
+          "place.hotel"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.hotel inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:festival-cantica-sacra-rocamadour",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 50,
+      "currentCategories": [
+        "place.festival"
+      ],
+      "invalidCategories": [
+        "place.festival"
+      ],
+      "sourceData": {
+        "entityId": "venue:festival-cantica-sacra-rocamadour",
+        "nameSlug": "festival-cantica-sacra-rocamadour",
+        "entityType": "venue",
+        "categories": [
+          "place.festival"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:war-on-screen",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 51,
+      "currentCategories": [
+        "place.festival"
+      ],
+      "invalidCategories": [
+        "place.festival"
+      ],
+      "sourceData": {
+        "entityId": "venue:war-on-screen",
+        "nameSlug": "war-on-screen",
+        "entityType": "venue",
+        "categories": [
+          "place.festival"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:march-du-puy-notre-dame",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 63,
+      "currentCategories": [
+        "place.market"
+      ],
+      "invalidCategories": [
+        "place.market"
+      ],
+      "sourceData": {
+        "entityId": "venue:march-du-puy-notre-dame",
+        "nameSlug": "march-du-puy-notre-dame",
+        "entityType": "venue",
+        "categories": [
+          "place.market"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.market inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:jeux-d-orgue",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 83,
+      "currentCategories": [
+        "place.festival"
+      ],
+      "invalidCategories": [
+        "place.festival"
+      ],
+      "sourceData": {
+        "entityId": "venue:jeux-d-orgue",
+        "nameSlug": "jeux-d-orgue",
+        "entityType": "venue",
+        "categories": [
+          "place.festival"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:mindje-e-care-t",
+      "entityType": "restaurant",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 87,
+      "currentCategories": [
+        "food.tapas"
+      ],
+      "invalidCategories": [
+        "food.tapas"
+      ],
+      "sourceData": {
+        "entityId": "venue:mindje-e-care-t",
+        "nameSlug": "mindje-e-care-t",
+        "entityType": "restaurant",
+        "categories": [
+          "food.tapas"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "food.tapas inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis. NB : entityType 'restaurant' alors que l'entityId porte le préfixe 'venue:' (convention de slug), mais ce cas n'a PAS été signalé comme mismatch entityType par le rapport (seul havre-familial l'est vis-à-vis de l'export catalogue).",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:festival-international-de-la-calligraphie",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 88,
+      "currentCategories": [
+        "place.festival"
+      ],
+      "invalidCategories": [
+        "place.festival"
+      ],
+      "sourceData": {
+        "entityId": "venue:festival-international-de-la-calligraphie",
+        "nameSlug": "festival-international-de-la-calligraphie",
+        "entityType": "venue",
+        "categories": [
+          "place.festival"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:cluny-danse",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 90,
+      "currentCategories": [
+        "place.festival"
+      ],
+      "invalidCategories": [
+        "place.festival"
+      ],
+      "sourceData": {
+        "entityId": "venue:cluny-danse",
+        "nameSlug": "cluny-danse",
+        "entityType": "venue",
+        "categories": [
+          "place.festival"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.festival inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    },
+    {
+      "entityId": "venue:h-tel-le-r-gent",
+      "entityType": "venue",
+      "sourceFile": "part-004.jsonl",
+      "sourceLine": 93,
+      "currentCategories": [
+        "place.hotel"
+      ],
+      "invalidCategories": [
+        "place.hotel"
+      ],
+      "sourceData": {
+        "entityId": "venue:h-tel-le-r-gent",
+        "nameSlug": "h-tel-le-r-gent",
+        "entityType": "venue",
+        "categories": [
+          "place.hotel"
+        ],
+        "confidence": 0.99,
+        "seedModel": "external-chatgpt-taxonomy-v1"
+      },
+      "taxonomyReason": "place.hotel inconnue de la taxonomie v2026.2 ; après filtrage, 0 catégorie valide → rejet invalid-analysis.",
+      "suggestedValidCategories": []
+    }
+  ],
+  "partSummary": {
+    "partIndex": 2,
+    "ofParts": 3,
+    "invalidCategoriesInThisPart": 10,
+    "entityTypeMismatchInThisPart": 0
+  }
+}
