@@ -1,0 +1,18 @@
+{
+  "totalEligible": 437717,
+  "batchSize": 500,
+  "totalBatches": 876,
+  "prepared": 876,
+  "classified": 0,
+  "validated": 0,
+  "imported": 0,
+  "blocked": 0,
+  "remaining": 876,
+  "publishedWave": "0001-0050",
+  "publishedBatches": 50,
+  "unpublishedBatches": 826,
+  "publishedRange": "batch-0001..batch-0050",
+  "unpublishedRange": "batch-0051..batch-0876",
+  "snapshotHash": "4507561f760f355b8238baef3f8f6f6b4835a894fb9af43ca7ecc6a020f8fa69",
+  "generatedAt": "2026-08-15T00:13:42.980Z"
+}

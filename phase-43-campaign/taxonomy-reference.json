@@ -1,0 +1,1871 @@
+{
+  "taxonomyVersion": "2026.2",
+  "analysisVersion": "4",
+  "constraints": {
+    "onlyAssignableIds": "seules les catégories avec un parent (2+ niveaux) sont assignables ; jamais une racine de domaine nue (music/food/hotel/place/event)",
+    "maxTotalCategories": 8,
+    "maxSameParentCategories": 6,
+    "confidenceRange": [
+      0,
+      1
+    ],
+    "aliasesResolved": "les alias déclarés sont résolus vers l'id canonique ; ne pas inventer d'alias",
+    "attributes": "objet optionnel ; seules les clés du vocabulaire avec valeur true sont conservées, le reste est filtré (jamais un rejet)",
+    "atLeastOneCategory": "au moins une catégorie assignable doit survivre, sinon ABSTENTION = ne rien produire pour cette entité"
+  },
+  "recommendedDomainsByEntityType": {
+    "restaurant": [
+      "food"
+    ],
+    "hotel": [
+      "hotel"
+    ],
+    "venue": [
+      "place"
+    ],
+    "event": [
+      "event",
+      "music"
+    ]
+  },
+  "note": "Le validateur n'impose PAS que le domaine corresponde au entityType (un event porte légitimement des genres music.*). Guidance, pas contrainte dure.",
+  "categories": [
+    {
+      "id": "music",
+      "label": "Musique",
+      "domain": "music",
+      "assignable": false
+    },
+    {
+      "id": "food",
+      "label": "Restauration",
+      "domain": "food",
+      "assignable": false
+    },
+    {
+      "id": "hotel",
+      "label": "Hébergement",
+      "domain": "hotel",
+      "assignable": false
+    },
+    {
+      "id": "place",
+      "label": "Lieux / visites",
+      "domain": "place",
+      "assignable": false
+    },
+    {
+      "id": "event",
+      "label": "Événement",
+      "domain": "event",
+      "assignable": false
+    },
+    {
+      "id": "music.rock",
+      "label": "Rock",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.classic-rock",
+      "label": "Classic rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.hard-rock",
+      "label": "Hard rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.punk-rock",
+      "label": "Punk rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.post-punk",
+      "label": "Post-punk",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.indie-rock",
+      "label": "Indie rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.alternative-rock",
+      "label": "Alternative rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.progressive-rock",
+      "label": "Rock progressif",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.psychedelic-rock",
+      "label": "Rock psychédélique",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.garage-rock",
+      "label": "Garage rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.glam-rock",
+      "label": "Glam rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.grunge",
+      "label": "Grunge",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.shoegaze",
+      "label": "Shoegaze",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.post-rock",
+      "label": "Post-rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.math-rock",
+      "label": "Math rock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.rock.krautrock",
+      "label": "Krautrock",
+      "domain": "music",
+      "parentId": "music.rock",
+      "assignable": true
+    },
+    {
+      "id": "music.metal",
+      "label": "Metal",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.heavy-metal",
+      "label": "Heavy metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.thrash-metal",
+      "label": "Thrash metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.black-metal",
+      "label": "Black metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.death-metal",
+      "label": "Death metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.melodic-death-metal",
+      "label": "Melodic death metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.doom-metal",
+      "label": "Doom metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.sludge-metal",
+      "label": "Sludge metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.stoner-metal",
+      "label": "Stoner metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.power-metal",
+      "label": "Power metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.progressive-metal",
+      "label": "Progressive metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.symphonic-metal",
+      "label": "Symphonic metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.folk-metal",
+      "label": "Folk metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.viking-metal",
+      "label": "Viking metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.gothic-metal",
+      "label": "Gothic metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.industrial-metal",
+      "label": "Industrial metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.nu-metal",
+      "label": "Nu metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.metalcore",
+      "label": "Metalcore",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.deathcore",
+      "label": "Deathcore",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.grindcore",
+      "label": "Grindcore",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.metal.groove-metal",
+      "label": "Groove metal",
+      "domain": "music",
+      "parentId": "music.metal",
+      "assignable": true
+    },
+    {
+      "id": "music.hardcore",
+      "label": "Hardcore",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.hardcore.punk-hardcore",
+      "label": "Hardcore punk",
+      "domain": "music",
+      "parentId": "music.hardcore",
+      "assignable": true
+    },
+    {
+      "id": "music.hardcore.post-hardcore",
+      "label": "Post-hardcore",
+      "domain": "music",
+      "parentId": "music.hardcore",
+      "assignable": true
+    },
+    {
+      "id": "music.hardcore.emo",
+      "label": "Emo",
+      "domain": "music",
+      "parentId": "music.hardcore",
+      "assignable": true
+    },
+    {
+      "id": "music.hardcore.screamo",
+      "label": "Screamo",
+      "domain": "music",
+      "parentId": "music.hardcore",
+      "assignable": true
+    },
+    {
+      "id": "music.punk",
+      "label": "Punk",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.punk.ska-punk",
+      "label": "Ska punk",
+      "domain": "music",
+      "parentId": "music.punk",
+      "assignable": true
+    },
+    {
+      "id": "music.punk.pop-punk",
+      "label": "Pop punk",
+      "domain": "music",
+      "parentId": "music.punk",
+      "assignable": true
+    },
+    {
+      "id": "music.punk.crust-punk",
+      "label": "Crust punk",
+      "domain": "music",
+      "parentId": "music.punk",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz",
+      "label": "Jazz",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.bebop",
+      "label": "Bebop",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.swing",
+      "label": "Swing",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.cool-jazz",
+      "label": "Cool jazz",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.free-jazz",
+      "label": "Free jazz",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.fusion",
+      "label": "Jazz fusion",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.smooth-jazz",
+      "label": "Smooth jazz",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.manouche",
+      "label": "Jazz manouche",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.acid-jazz",
+      "label": "Acid jazz",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.jazz.nu-jazz",
+      "label": "Nu jazz",
+      "domain": "music",
+      "parentId": "music.jazz",
+      "assignable": true
+    },
+    {
+      "id": "music.blues",
+      "label": "Blues",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.blues.delta-blues",
+      "label": "Delta blues",
+      "domain": "music",
+      "parentId": "music.blues",
+      "assignable": true
+    },
+    {
+      "id": "music.blues.chicago-blues",
+      "label": "Chicago blues",
+      "domain": "music",
+      "parentId": "music.blues",
+      "assignable": true
+    },
+    {
+      "id": "music.blues.blues-rock",
+      "label": "Blues rock",
+      "domain": "music",
+      "parentId": "music.blues",
+      "assignable": true
+    },
+    {
+      "id": "music.country",
+      "label": "Country",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.country.bluegrass",
+      "label": "Bluegrass",
+      "domain": "music",
+      "parentId": "music.country",
+      "assignable": true
+    },
+    {
+      "id": "music.country.americana",
+      "label": "Americana",
+      "domain": "music",
+      "parentId": "music.country",
+      "assignable": true
+    },
+    {
+      "id": "music.country.alt-country",
+      "label": "Alt-country",
+      "domain": "music",
+      "parentId": "music.country",
+      "assignable": true
+    },
+    {
+      "id": "music.folk",
+      "label": "Folk",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.folk.traditionnel",
+      "label": "Folk traditionnel",
+      "domain": "music",
+      "parentId": "music.folk",
+      "assignable": true
+    },
+    {
+      "id": "music.folk.folk-contemporain",
+      "label": "Folk contemporain",
+      "domain": "music",
+      "parentId": "music.folk",
+      "assignable": true
+    },
+    {
+      "id": "music.folk.chanson-francaise",
+      "label": "Chanson française",
+      "domain": "music",
+      "parentId": "music.folk",
+      "assignable": true
+    },
+    {
+      "id": "music.folk.musique-du-monde",
+      "label": "Musique du monde",
+      "domain": "music",
+      "parentId": "music.folk",
+      "assignable": true
+    },
+    {
+      "id": "music.folk.celtique",
+      "label": "Musique celtique",
+      "domain": "music",
+      "parentId": "music.folk",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic",
+      "label": "Électronique",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.techno",
+      "label": "Techno",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.house",
+      "label": "House",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.deep-house",
+      "label": "Deep house",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.tech-house",
+      "label": "Tech house",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.minimal",
+      "label": "Minimal",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.hardstyle",
+      "label": "Hardstyle",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.hardcore-techno",
+      "label": "Hardcore techno",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.trance",
+      "label": "Trance",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.psytrance",
+      "label": "Psytrance",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.ambient",
+      "label": "Ambient",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.idm",
+      "label": "IDM",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.drum-and-bass",
+      "label": "Drum and bass",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.jungle",
+      "label": "Jungle",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.dubstep",
+      "label": "Dubstep",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.breakbeat",
+      "label": "Breakbeat",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.electro",
+      "label": "Électro",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.synthwave",
+      "label": "Synthwave",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.downtempo",
+      "label": "Downtempo",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.disco",
+      "label": "Disco",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.electronic.eurodance",
+      "label": "Eurodance",
+      "domain": "music",
+      "parentId": "music.electronic",
+      "assignable": true
+    },
+    {
+      "id": "music.hip-hop",
+      "label": "Hip-hop",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.hip-hop.boom-bap",
+      "label": "Boom bap",
+      "domain": "music",
+      "parentId": "music.hip-hop",
+      "assignable": true
+    },
+    {
+      "id": "music.hip-hop.trap",
+      "label": "Trap",
+      "domain": "music",
+      "parentId": "music.hip-hop",
+      "assignable": true
+    },
+    {
+      "id": "music.hip-hop.cloud-rap",
+      "label": "Cloud rap",
+      "domain": "music",
+      "parentId": "music.hip-hop",
+      "assignable": true
+    },
+    {
+      "id": "music.hip-hop.drill",
+      "label": "Drill",
+      "domain": "music",
+      "parentId": "music.hip-hop",
+      "assignable": true
+    },
+    {
+      "id": "music.hip-hop.old-school",
+      "label": "Old-school hip-hop",
+      "domain": "music",
+      "parentId": "music.hip-hop",
+      "assignable": true
+    },
+    {
+      "id": "music.rap",
+      "label": "Rap",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.rap.rap-francais",
+      "label": "Rap français",
+      "domain": "music",
+      "parentId": "music.rap",
+      "assignable": true
+    },
+    {
+      "id": "music.rap.gangsta-rap",
+      "label": "Gangsta rap",
+      "domain": "music",
+      "parentId": "music.rap",
+      "assignable": true
+    },
+    {
+      "id": "music.rap.conscious-rap",
+      "label": "Conscious rap",
+      "domain": "music",
+      "parentId": "music.rap",
+      "assignable": true
+    },
+    {
+      "id": "music.rnb",
+      "label": "R&B",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.rnb.contemporary-rnb",
+      "label": "R&B contemporain",
+      "domain": "music",
+      "parentId": "music.rnb",
+      "assignable": true
+    },
+    {
+      "id": "music.rnb.neo-soul",
+      "label": "Neo soul",
+      "domain": "music",
+      "parentId": "music.rnb",
+      "assignable": true
+    },
+    {
+      "id": "music.soul",
+      "label": "Soul",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.soul.motown",
+      "label": "Motown",
+      "domain": "music",
+      "parentId": "music.soul",
+      "assignable": true
+    },
+    {
+      "id": "music.funk",
+      "label": "Funk",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.funk.p-funk",
+      "label": "P-Funk",
+      "domain": "music",
+      "parentId": "music.funk",
+      "assignable": true
+    },
+    {
+      "id": "music.reggae",
+      "label": "Reggae",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.reggae.ska",
+      "label": "Ska",
+      "domain": "music",
+      "parentId": "music.reggae",
+      "assignable": true
+    },
+    {
+      "id": "music.reggae.dub",
+      "label": "Dub",
+      "domain": "music",
+      "parentId": "music.reggae",
+      "assignable": true
+    },
+    {
+      "id": "music.reggae.dancehall",
+      "label": "Dancehall",
+      "domain": "music",
+      "parentId": "music.reggae",
+      "assignable": true
+    },
+    {
+      "id": "music.reggae.reggaeton",
+      "label": "Reggaeton",
+      "domain": "music",
+      "parentId": "music.reggae",
+      "assignable": true
+    },
+    {
+      "id": "music.latin",
+      "label": "Musique latine",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.salsa",
+      "label": "Salsa",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.bachata",
+      "label": "Bachata",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.merengue",
+      "label": "Merengue",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.cumbia",
+      "label": "Cumbia",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.samba",
+      "label": "Samba",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.bossa-nova",
+      "label": "Bossa nova",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.flamenco",
+      "label": "Flamenco",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.tango",
+      "label": "Tango",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.pop",
+      "label": "Pop",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.pop.synth-pop",
+      "label": "Synth-pop",
+      "domain": "music",
+      "parentId": "music.pop",
+      "assignable": true
+    },
+    {
+      "id": "music.pop.indie-pop",
+      "label": "Indie pop",
+      "domain": "music",
+      "parentId": "music.pop",
+      "assignable": true
+    },
+    {
+      "id": "music.pop.k-pop",
+      "label": "K-pop",
+      "domain": "music",
+      "parentId": "music.pop",
+      "assignable": true
+    },
+    {
+      "id": "music.pop.variete-francaise",
+      "label": "Variété française",
+      "domain": "music",
+      "parentId": "music.pop",
+      "assignable": true
+    },
+    {
+      "id": "music.classical",
+      "label": "Musique classique",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.classical.baroque",
+      "label": "Baroque",
+      "domain": "music",
+      "parentId": "music.classical",
+      "assignable": true
+    },
+    {
+      "id": "music.classical.romantique",
+      "label": "Romantique",
+      "domain": "music",
+      "parentId": "music.classical",
+      "assignable": true
+    },
+    {
+      "id": "music.classical.contemporain",
+      "label": "Musique contemporaine",
+      "domain": "music",
+      "parentId": "music.classical",
+      "assignable": true
+    },
+    {
+      "id": "music.classical.opera",
+      "label": "Opéra",
+      "domain": "music",
+      "parentId": "music.classical",
+      "assignable": true,
+      "aliases": [
+        "music.opera"
+      ]
+    },
+    {
+      "id": "music.classical.choral",
+      "label": "Choral",
+      "domain": "music",
+      "parentId": "music.classical",
+      "assignable": true,
+      "aliases": [
+        "music.choral"
+      ]
+    },
+    {
+      "id": "music.classical.musique-de-chambre",
+      "label": "Musique de chambre",
+      "domain": "music",
+      "parentId": "music.classical",
+      "assignable": true
+    },
+    {
+      "id": "music.gospel",
+      "label": "Gospel",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.world",
+      "label": "World music",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.experimental",
+      "label": "Musique expérimentale",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.noise",
+      "label": "Noise",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "music.industrial",
+      "label": "Industrial",
+      "domain": "music",
+      "parentId": "music",
+      "assignable": true
+    },
+    {
+      "id": "food.french",
+      "label": "Cuisine française",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.italian",
+      "label": "Cuisine italienne",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.japanese",
+      "label": "Cuisine japonaise",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.korean",
+      "label": "Cuisine coréenne",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.chinese",
+      "label": "Cuisine chinoise",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.thai",
+      "label": "Cuisine thaïlandaise",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.vietnamese",
+      "label": "Cuisine vietnamienne",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.indian",
+      "label": "Cuisine indienne",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.lebanese",
+      "label": "Cuisine libanaise",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.moroccan",
+      "label": "Cuisine marocaine",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.mexican",
+      "label": "Cuisine mexicaine",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.spanish",
+      "label": "Cuisine espagnole",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.greek",
+      "label": "Cuisine grecque",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.turkish",
+      "label": "Cuisine turque",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.mediterranean",
+      "label": "Cuisine méditerranéenne",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.world-cuisine",
+      "label": "Cuisine du monde",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.gastronomic",
+      "label": "Gastronomique",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.bistronomy",
+      "label": "Bistronomie",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.brasserie",
+      "label": "Brasserie",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.bistro",
+      "label": "Bistrot",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true,
+      "aliases": [
+        "food.bistrot"
+      ]
+    },
+    {
+      "id": "food.street-food",
+      "label": "Street food",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.fast-food",
+      "label": "Fast-food",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.burger",
+      "label": "Burger",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.pizza",
+      "label": "Pizza",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.sushi",
+      "label": "Sushi",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.seafood",
+      "label": "Fruits de mer",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.grill",
+      "label": "Grill",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.creperie",
+      "label": "Crêperie",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.bakery",
+      "label": "Boulangerie/Pâtisserie",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.cafe",
+      "label": "Café",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.wine-bar",
+      "label": "Bar à vin",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.vegetarian",
+      "label": "Végétarien",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.vegan",
+      "label": "Végan",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.halal",
+      "label": "Halal",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.kosher",
+      "label": "Casher",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.bio",
+      "label": "Bio",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.gluten-free",
+      "label": "Sans gluten",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "food.organic-farm-to-table",
+      "label": "Circuit court",
+      "domain": "food",
+      "parentId": "food",
+      "assignable": true
+    },
+    {
+      "id": "hotel.business",
+      "label": "Business",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.luxury",
+      "label": "Luxe",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.family",
+      "label": "Familial",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.spa",
+      "label": "Spa",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.romantic",
+      "label": "Romantique",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.nature",
+      "label": "Nature",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.camping",
+      "label": "Camping",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.hostel",
+      "label": "Auberge de jeunesse",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.economic",
+      "label": "Économique",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.design",
+      "label": "Design",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.boutique",
+      "label": "Boutique-hôtel",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.eco",
+      "label": "Éco-responsable",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.pet-friendly",
+      "label": "Animaux acceptés",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.accessible",
+      "label": "Accessible PMR",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.historic",
+      "label": "Bâtiment historique",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.restaurant",
+      "label": "Hôtel-restaurant",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.vacation-village",
+      "label": "Village vacances",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "hotel.tourist-residence",
+      "label": "Résidence de tourisme",
+      "domain": "hotel",
+      "parentId": "hotel",
+      "assignable": true
+    },
+    {
+      "id": "place.museum",
+      "label": "Musée",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.heritage",
+      "label": "Patrimoine",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.monument",
+      "label": "Monument",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.contemporary-art",
+      "label": "Art contemporain",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.nature",
+      "label": "Nature",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.park",
+      "label": "Parc",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.garden",
+      "label": "Jardin",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.hiking",
+      "label": "Randonnée",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.zoo",
+      "label": "Zoo",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.aquarium",
+      "label": "Aquarium",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.religious-site",
+      "label": "Site religieux",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.castle",
+      "label": "Château",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.viewpoint",
+      "label": "Point de vue",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.cave",
+      "label": "Grotte",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.industrial-heritage",
+      "label": "Patrimoine industriel",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.cinema",
+      "label": "Cinéma",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.library",
+      "label": "Bibliothèque / Médiathèque",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true,
+      "aliases": [
+        "bibliotheque",
+        "place.bibliotheque"
+      ]
+    },
+    {
+      "id": "place.performance-hall",
+      "label": "Salle de spectacle",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.multipurpose-hall",
+      "label": "Salle polyvalente",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.casino",
+      "label": "Casino",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.convention-center",
+      "label": "Palais des congrès",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.water-park",
+      "label": "Parc aquatique",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.sport",
+      "label": "Équipement sportif",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true,
+      "aliases": [
+        "equipement-sportif",
+        "place.equipement-sportif",
+        "place.sports-venue",
+        "place.sports"
+      ]
+    },
+    {
+      "id": "place.sport.stadium",
+      "label": "Stade",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.sport.gymnasium",
+      "label": "Gymnase",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.sport.swimming-pool",
+      "label": "Piscine",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.sport.ice-rink",
+      "label": "Patinoire",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.sport.equestrian-center",
+      "label": "Centre équestre",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.sport.climbing-wall",
+      "label": "Mur d'escalade",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.sport.skatepark",
+      "label": "Skatepark",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.sport.bowling",
+      "label": "Bowling",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.sport.karting",
+      "label": "Karting",
+      "domain": "place",
+      "parentId": "place.sport",
+      "assignable": true
+    },
+    {
+      "id": "place.leisure",
+      "label": "Loisirs indoor",
+      "domain": "place",
+      "parentId": "place",
+      "assignable": true
+    },
+    {
+      "id": "place.leisure.laser-game",
+      "label": "Laser Game",
+      "domain": "place",
+      "parentId": "place.leisure",
+      "assignable": true
+    },
+    {
+      "id": "place.leisure.escape-game",
+      "label": "Escape Game",
+      "domain": "place",
+      "parentId": "place.leisure",
+      "assignable": true
+    },
+    {
+      "id": "event.concert",
+      "label": "Concert",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.concert.live",
+      "label": "Concert live",
+      "domain": "event",
+      "parentId": "event.concert",
+      "assignable": true
+    },
+    {
+      "id": "event.festival",
+      "label": "Festival",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.festival.outdoor",
+      "label": "Festival en extérieur",
+      "domain": "event",
+      "parentId": "event.festival",
+      "assignable": true
+    },
+    {
+      "id": "event.festival.indoor",
+      "label": "Festival en intérieur",
+      "domain": "event",
+      "parentId": "event.festival",
+      "assignable": true
+    },
+    {
+      "id": "event.exhibition",
+      "label": "Exposition",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.theatre",
+      "label": "Théâtre",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.dance",
+      "label": "Danse",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.comedy",
+      "label": "Comédie/Humour",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.conference",
+      "label": "Conférence",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.workshop",
+      "label": "Atelier",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.market",
+      "label": "Marché",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.sport",
+      "label": "Événement sportif",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.screening",
+      "label": "Séance de cinéma",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true,
+      "aliases": [
+        "event.cinema",
+        "event.film",
+        "event.film-screening"
+      ]
+    },
+    {
+      "id": "event.museum-visit",
+      "label": "Visite de musée",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true,
+      "aliases": [
+        "event.musee",
+        "event.museums",
+        "event.musees"
+      ]
+    },
+    {
+      "id": "event.family",
+      "label": "Événement familial",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.nightlife",
+      "label": "Vie nocturne",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.outdoor",
+      "label": "En extérieur",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.indoor",
+      "label": "En intérieur",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.large-audience",
+      "label": "Grand public",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    },
+    {
+      "id": "event.niche-audience",
+      "label": "Public de niche",
+      "domain": "event",
+      "parentId": "event",
+      "assignable": true
+    }
+  ],
+  "attributeVocabulary": {
+    "event": {
+      "family": "adapté à un public familial avec enfants",
+      "smallVenue": "se déroule dans un lieu à petite jauge, ambiance intimiste",
+      "outdoor": "se déroule en extérieur"
+    },
+    "venue": {
+      "family": "adapté à un public familial avec enfants",
+      "accessible": "accessible aux personnes à mobilité réduite",
+      "outdoor": "dispose d'un espace extérieur",
+      "freeEntry": "entrée gratuite"
+    },
+    "restaurant": {
+      "family": "adapté à un public familial avec enfants",
+      "accessible": "accessible aux personnes à mobilité réduite",
+      "outdoor": "dispose d'une terrasse ou d'un espace extérieur",
+      "quick": "formule rapide, service court",
+      "romantic": "ambiance propice à un dîner romantique",
+      "petFriendly": "accepte les animaux"
+    }
+  }
+}

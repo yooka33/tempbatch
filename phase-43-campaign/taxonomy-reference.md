@@ -1,0 +1,290 @@
+# Taxonomie de référence Radius (à utiliser telle quelle)
+
+- taxonomyVersion : `2026.2` · analysisVersion : `4`
+- Contraintes : catégories ASSIGNABLES uniquement ; ≤ 8 au total ; ≤ 6 sous un même parent ; confiance ∈ [0,1] ; ≥ 1 catégorie sinon ABSTENTION.
+- Domaines recommandés : restaurant→food.* · hotel→hotel.* · venue→place.* · event→event.* (+ music.*).
+- Attributs : objet optionnel, seules les clés du vocabulaire (valeur `true`) sont conservées.
+
+## Catégories assignables par domaine
+
+### food
+- `food.french` — Cuisine française
+- `food.italian` — Cuisine italienne
+- `food.japanese` — Cuisine japonaise
+- `food.korean` — Cuisine coréenne
+- `food.chinese` — Cuisine chinoise
+- `food.thai` — Cuisine thaïlandaise
+- `food.vietnamese` — Cuisine vietnamienne
+- `food.indian` — Cuisine indienne
+- `food.lebanese` — Cuisine libanaise
+- `food.moroccan` — Cuisine marocaine
+- `food.mexican` — Cuisine mexicaine
+- `food.spanish` — Cuisine espagnole
+- `food.greek` — Cuisine grecque
+- `food.turkish` — Cuisine turque
+- `food.mediterranean` — Cuisine méditerranéenne
+- `food.world-cuisine` — Cuisine du monde
+- `food.gastronomic` — Gastronomique
+- `food.bistronomy` — Bistronomie
+- `food.brasserie` — Brasserie
+- `food.bistro` — Bistrot (alias: food.bistrot)
+- `food.street-food` — Street food
+- `food.fast-food` — Fast-food
+- `food.burger` — Burger
+- `food.pizza` — Pizza
+- `food.sushi` — Sushi
+- `food.seafood` — Fruits de mer
+- `food.grill` — Grill
+- `food.creperie` — Crêperie
+- `food.bakery` — Boulangerie/Pâtisserie
+- `food.cafe` — Café
+- `food.wine-bar` — Bar à vin
+- `food.vegetarian` — Végétarien
+- `food.vegan` — Végan
+- `food.halal` — Halal
+- `food.kosher` — Casher
+- `food.bio` — Bio
+- `food.gluten-free` — Sans gluten
+- `food.organic-farm-to-table` — Circuit court
+
+### hotel
+- `hotel.business` — Business
+- `hotel.luxury` — Luxe
+- `hotel.family` — Familial
+- `hotel.spa` — Spa
+- `hotel.romantic` — Romantique
+- `hotel.nature` — Nature
+- `hotel.camping` — Camping
+- `hotel.hostel` — Auberge de jeunesse
+- `hotel.economic` — Économique
+- `hotel.design` — Design
+- `hotel.boutique` — Boutique-hôtel
+- `hotel.eco` — Éco-responsable
+- `hotel.pet-friendly` — Animaux acceptés
+- `hotel.accessible` — Accessible PMR
+- `hotel.historic` — Bâtiment historique
+- `hotel.restaurant` — Hôtel-restaurant
+- `hotel.vacation-village` — Village vacances
+- `hotel.tourist-residence` — Résidence de tourisme
+
+### place
+- `place.museum` — Musée
+- `place.heritage` — Patrimoine
+- `place.monument` — Monument
+- `place.contemporary-art` — Art contemporain
+- `place.nature` — Nature
+- `place.park` — Parc
+- `place.garden` — Jardin
+- `place.hiking` — Randonnée
+- `place.zoo` — Zoo
+- `place.aquarium` — Aquarium
+- `place.religious-site` — Site religieux
+- `place.castle` — Château
+- `place.viewpoint` — Point de vue
+- `place.cave` — Grotte
+- `place.industrial-heritage` — Patrimoine industriel
+- `place.cinema` — Cinéma
+- `place.library` — Bibliothèque / Médiathèque (alias: bibliotheque, place.bibliotheque)
+- `place.performance-hall` — Salle de spectacle
+- `place.multipurpose-hall` — Salle polyvalente
+- `place.casino` — Casino
+- `place.convention-center` — Palais des congrès
+- `place.water-park` — Parc aquatique
+- `place.sport` — Équipement sportif (alias: equipement-sportif, place.equipement-sportif, place.sports-venue, place.sports)
+- `place.sport.stadium` — Stade
+- `place.sport.gymnasium` — Gymnase
+- `place.sport.swimming-pool` — Piscine
+- `place.sport.ice-rink` — Patinoire
+- `place.sport.equestrian-center` — Centre équestre
+- `place.sport.climbing-wall` — Mur d'escalade
+- `place.sport.skatepark` — Skatepark
+- `place.sport.bowling` — Bowling
+- `place.sport.karting` — Karting
+- `place.leisure` — Loisirs indoor
+- `place.leisure.laser-game` — Laser Game
+- `place.leisure.escape-game` — Escape Game
+
+### event
+- `event.concert` — Concert
+- `event.concert.live` — Concert live
+- `event.festival` — Festival
+- `event.festival.outdoor` — Festival en extérieur
+- `event.festival.indoor` — Festival en intérieur
+- `event.exhibition` — Exposition
+- `event.theatre` — Théâtre
+- `event.dance` — Danse
+- `event.comedy` — Comédie/Humour
+- `event.conference` — Conférence
+- `event.workshop` — Atelier
+- `event.market` — Marché
+- `event.sport` — Événement sportif
+- `event.screening` — Séance de cinéma (alias: event.cinema, event.film, event.film-screening)
+- `event.museum-visit` — Visite de musée (alias: event.musee, event.museums, event.musees)
+- `event.family` — Événement familial
+- `event.nightlife` — Vie nocturne
+- `event.outdoor` — En extérieur
+- `event.indoor` — En intérieur
+- `event.large-audience` — Grand public
+- `event.niche-audience` — Public de niche
+
+### music
+- `music.rock` — Rock
+- `music.rock.classic-rock` — Classic rock
+- `music.rock.hard-rock` — Hard rock
+- `music.rock.punk-rock` — Punk rock
+- `music.rock.post-punk` — Post-punk
+- `music.rock.indie-rock` — Indie rock
+- `music.rock.alternative-rock` — Alternative rock
+- `music.rock.progressive-rock` — Rock progressif
+- `music.rock.psychedelic-rock` — Rock psychédélique
+- `music.rock.garage-rock` — Garage rock
+- `music.rock.glam-rock` — Glam rock
+- `music.rock.grunge` — Grunge
+- `music.rock.shoegaze` — Shoegaze
+- `music.rock.post-rock` — Post-rock
+- `music.rock.math-rock` — Math rock
+- `music.rock.krautrock` — Krautrock
+- `music.metal` — Metal
+- `music.metal.heavy-metal` — Heavy metal
+- `music.metal.thrash-metal` — Thrash metal
+- `music.metal.black-metal` — Black metal
+- `music.metal.death-metal` — Death metal
+- `music.metal.melodic-death-metal` — Melodic death metal
+- `music.metal.doom-metal` — Doom metal
+- `music.metal.sludge-metal` — Sludge metal
+- `music.metal.stoner-metal` — Stoner metal
+- `music.metal.power-metal` — Power metal
+- `music.metal.progressive-metal` — Progressive metal
+- `music.metal.symphonic-metal` — Symphonic metal
+- `music.metal.folk-metal` — Folk metal
+- `music.metal.viking-metal` — Viking metal
+- `music.metal.gothic-metal` — Gothic metal
+- `music.metal.industrial-metal` — Industrial metal
+- `music.metal.nu-metal` — Nu metal
+- `music.metal.metalcore` — Metalcore
+- `music.metal.deathcore` — Deathcore
+- `music.metal.grindcore` — Grindcore
+- `music.metal.groove-metal` — Groove metal
+- `music.hardcore` — Hardcore
+- `music.hardcore.punk-hardcore` — Hardcore punk
+- `music.hardcore.post-hardcore` — Post-hardcore
+- `music.hardcore.emo` — Emo
+- `music.hardcore.screamo` — Screamo
+- `music.punk` — Punk
+- `music.punk.ska-punk` — Ska punk
+- `music.punk.pop-punk` — Pop punk
+- `music.punk.crust-punk` — Crust punk
+- `music.jazz` — Jazz
+- `music.jazz.bebop` — Bebop
+- `music.jazz.swing` — Swing
+- `music.jazz.cool-jazz` — Cool jazz
+- `music.jazz.free-jazz` — Free jazz
+- `music.jazz.fusion` — Jazz fusion
+- `music.jazz.smooth-jazz` — Smooth jazz
+- `music.jazz.manouche` — Jazz manouche
+- `music.jazz.acid-jazz` — Acid jazz
+- `music.jazz.nu-jazz` — Nu jazz
+- `music.blues` — Blues
+- `music.blues.delta-blues` — Delta blues
+- `music.blues.chicago-blues` — Chicago blues
+- `music.blues.blues-rock` — Blues rock
+- `music.country` — Country
+- `music.country.bluegrass` — Bluegrass
+- `music.country.americana` — Americana
+- `music.country.alt-country` — Alt-country
+- `music.folk` — Folk
+- `music.folk.traditionnel` — Folk traditionnel
+- `music.folk.folk-contemporain` — Folk contemporain
+- `music.folk.chanson-francaise` — Chanson française
+- `music.folk.musique-du-monde` — Musique du monde
+- `music.folk.celtique` — Musique celtique
+- `music.electronic` — Électronique
+- `music.electronic.techno` — Techno
+- `music.electronic.house` — House
+- `music.electronic.deep-house` — Deep house
+- `music.electronic.tech-house` — Tech house
+- `music.electronic.minimal` — Minimal
+- `music.electronic.hardstyle` — Hardstyle
+- `music.electronic.hardcore-techno` — Hardcore techno
+- `music.electronic.trance` — Trance
+- `music.electronic.psytrance` — Psytrance
+- `music.electronic.ambient` — Ambient
+- `music.electronic.idm` — IDM
+- `music.electronic.drum-and-bass` — Drum and bass
+- `music.electronic.jungle` — Jungle
+- `music.electronic.dubstep` — Dubstep
+- `music.electronic.breakbeat` — Breakbeat
+- `music.electronic.electro` — Électro
+- `music.electronic.synthwave` — Synthwave
+- `music.electronic.downtempo` — Downtempo
+- `music.electronic.disco` — Disco
+- `music.electronic.eurodance` — Eurodance
+- `music.hip-hop` — Hip-hop
+- `music.hip-hop.boom-bap` — Boom bap
+- `music.hip-hop.trap` — Trap
+- `music.hip-hop.cloud-rap` — Cloud rap
+- `music.hip-hop.drill` — Drill
+- `music.hip-hop.old-school` — Old-school hip-hop
+- `music.rap` — Rap
+- `music.rap.rap-francais` — Rap français
+- `music.rap.gangsta-rap` — Gangsta rap
+- `music.rap.conscious-rap` — Conscious rap
+- `music.rnb` — R&B
+- `music.rnb.contemporary-rnb` — R&B contemporain
+- `music.rnb.neo-soul` — Neo soul
+- `music.soul` — Soul
+- `music.soul.motown` — Motown
+- `music.funk` — Funk
+- `music.funk.p-funk` — P-Funk
+- `music.reggae` — Reggae
+- `music.reggae.ska` — Ska
+- `music.reggae.dub` — Dub
+- `music.reggae.dancehall` — Dancehall
+- `music.reggae.reggaeton` — Reggaeton
+- `music.latin` — Musique latine
+- `music.salsa` — Salsa
+- `music.bachata` — Bachata
+- `music.merengue` — Merengue
+- `music.cumbia` — Cumbia
+- `music.samba` — Samba
+- `music.bossa-nova` — Bossa nova
+- `music.flamenco` — Flamenco
+- `music.tango` — Tango
+- `music.pop` — Pop
+- `music.pop.synth-pop` — Synth-pop
+- `music.pop.indie-pop` — Indie pop
+- `music.pop.k-pop` — K-pop
+- `music.pop.variete-francaise` — Variété française
+- `music.classical` — Musique classique
+- `music.classical.baroque` — Baroque
+- `music.classical.romantique` — Romantique
+- `music.classical.contemporain` — Musique contemporaine
+- `music.classical.opera` — Opéra (alias: music.opera)
+- `music.classical.choral` — Choral (alias: music.choral)
+- `music.classical.musique-de-chambre` — Musique de chambre
+- `music.gospel` — Gospel
+- `music.world` — World music
+- `music.experimental` — Musique expérimentale
+- `music.noise` — Noise
+- `music.industrial` — Industrial
+
+## Vocabulaire d'attributs (par entityType)
+
+### event
+- `family` : adapté à un public familial avec enfants
+- `smallVenue` : se déroule dans un lieu à petite jauge, ambiance intimiste
+- `outdoor` : se déroule en extérieur
+
+### venue
+- `family` : adapté à un public familial avec enfants
+- `accessible` : accessible aux personnes à mobilité réduite
+- `outdoor` : dispose d'un espace extérieur
+- `freeEntry` : entrée gratuite
+
+### restaurant
+- `family` : adapté à un public familial avec enfants
+- `accessible` : accessible aux personnes à mobilité réduite
+- `outdoor` : dispose d'une terrasse ou d'un espace extérieur
+- `quick` : formule rapide, service court
+- `romantic` : ambiance propice à un dîner romantique
+- `petFriendly` : accepte les animaux
